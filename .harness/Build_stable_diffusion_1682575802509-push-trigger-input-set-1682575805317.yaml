@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_stable_diffusion_1682575802509-push-trigger-input-set
+  identifier: Build_stable_diffusion_1682575802509pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: test
+  pipeline:
+    identifier: Build_stable_diffusion_1682575802509
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
